@@ -33,4 +33,4 @@ jobs:
     # Paso 4: Ejecutar Pruebas (Verificación de Integridad)
     # Aquí se ejecutan los 'assert' del archivo test_logica.py
     - name: Ejecutar Pruebas con Pytest
-      run: pytest
+      run: PYTHONPATH=src pytest
