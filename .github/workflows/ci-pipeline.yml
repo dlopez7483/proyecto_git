@@ -33,4 +33,6 @@ jobs:
 
     # Paso 4: Ejecutar pruebas (Verificación de Integridad)
     - name: Ejecutar Pruebas con Pytest
-      run: PYTHONPATH=src pytest -v
+      run: |
+        export PYTHONPATH=$PYTHONPATH:$(pwd)/src
+        pytest -v
