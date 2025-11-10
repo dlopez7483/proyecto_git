@@ -16,7 +16,7 @@ jobs:
 
     # Paso 1: Obtener el código del repositorio
     - name: Checkout del repositorio
-      uses: actions/checkout@v366
+      uses: actions/checkout@v4
 
     # Paso 2: Configurar el entorno de Python
     - name: Configurar Python 3.10
